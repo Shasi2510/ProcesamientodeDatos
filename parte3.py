@@ -14,6 +14,8 @@ df_noperecieron = df[df["is_dead"] != 1]
 #Promedio de Edades
 promedio_edades = df['Edad'].mean()
 
-#Hombres y Mujeres Fumadores
-promedio_fumadores = df.groupby('Genero', 'Fumador').mean()
-print(promedio_fumadores)
+#Verificación de Datos
+tipos_de_datos = df.dtypes
+
+print(tipos_de_datos)
+
