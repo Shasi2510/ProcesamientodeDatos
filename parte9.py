@@ -24,7 +24,7 @@ X_embedded = TSNE(
     learning_rate='auto',
     init='random',
     perplexity=3
-).fit_transform(X)
+).fit_transform('X')
 
 # Generar datos aleatorios
 np.random.seed(0)
